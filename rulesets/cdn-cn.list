@@ -1,0 +1,7 @@
+# 跨国厂商国内 CDN 调度域名集（自维护，补上游 domainset 缺失部分）
+# 用途：[Host] 中指向阿里 DoH，使直连流量获得国内 CDN 就近调度
+# 语法：`.` 前缀同时匹配裸域及其所有子域
+.apple.com
+.icloud.com
+.microsoft.com
+.windowsupdate.com

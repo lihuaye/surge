@@ -1,0 +1,7 @@
+.DS_Store
+# AI 工具目录与协作说明：仓库为纯配置公开模板，默认不入库
+.trellis/
+.claude/
+.codex/
+.agents/
+AGENTS.md

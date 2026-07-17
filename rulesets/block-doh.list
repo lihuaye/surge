@@ -1,0 +1,22 @@
+# 第三方公共加密 DNS（DoH/DoT）端点拦截清单（自维护）
+# 目的：阻止应用/浏览器自带加密 DNS 绕过 Surge 的 DNS 接管；被拒后应用回落系统 DNS（已被 hijack-dns 接管）
+# 注意：Surge 自身的加密 DNS 走 IP（1.1.1.1 / 223.5.5.5）且由 PROTOCOL,DOH 规则先行匹配，不受本清单影响
+# Cloudflare（含 Firefox / Chrome 默认端点）
+DOMAIN-SUFFIX,cloudflare-dns.com
+# Google
+DOMAIN,dns.google
+DOMAIN,dns.google.com
+# Quad9
+DOMAIN,dns.quad9.net
+# OpenDNS
+DOMAIN,doh.opendns.com
+# AdGuard
+DOMAIN-SUFFIX,adguard-dns.com
+DOMAIN,dns.adguard.com
+# NextDNS（如你主动使用 NextDNS，请删除此行）
+DOMAIN,dns.nextdns.io
+# 腾讯 DNSPod 公共 DoH/DoT
+DOMAIN,doh.pub
+DOMAIN,dot.pub
+# 阿里公共 DoH 域名（Surge 自身走 223.5.5.5 IP 直连，不受影响）
+DOMAIN,dns.alidns.com
